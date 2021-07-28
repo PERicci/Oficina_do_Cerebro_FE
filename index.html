@@ -13,39 +13,41 @@
     <title>Oficina do Cérebro</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar px-3 is-fixed-top" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a href="https://www.educasomar.com.br" target="_blank" class="navbar-item">
-                    <img class="logo" src="assets/logo.png"> <p class="educaSomar has-text-black is-size-3-desktop is-size-4-touch has-text-weight-semibold">EDUCA SOMAR</p>
-                </a>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
+    
+    <div class="bg-img">
 
-            <div id="navbarMenu" class="navbar-menu navbar-end is-hoverable" id="navMenu">
-                <div class="navbar-end">
-                    <a class="navbar-item">
-                        Outros Eventos
-                    </a>
-                    <a class="navbar-item">
-                        Faça Parte
-                    </a>
-                    <a class="navbar-item">
-                        Contatos
-                    </a>
-                </div>
-            </div>
+    </div>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar is-fixed-top is-transparent container is-max-widescreen" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="https://www.educasomar.com.br" target="_blank" class="navbar-item">
+                <img class="logo" src="assets/logo.png"> <p class="educaSomar has-text-black is-size-3-desktop is-size-4-touch has-text-weight-semibold">EDUCA SOMAR</p>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
 
+        <div id="navbarMenu" class="navbar-menu navbar-end is-hoverable" id="navMenu">
             <div class="navbar-end">
-
+                <a class="navbar-item">
+                    Outros Eventos
+                </a>
+                <a class="navbar-item">
+                    Faça Parte
+                </a>
+                <a class="navbar-item">
+                    Contatos
+                </a>
             </div>
-        </nav>
-    </header>
-    <main class="container is-max-widescreen">
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="mt-6 container is-max-widescreen">
         <div id="highlight" class="columns">
             <div class="column">JOGOS</div>
             <div class="column">PALESTRAS</div>
@@ -59,10 +61,13 @@
             </form>
         </div>
     </main>
-    <footer class="footer container is-max-widescreen">
+
+    <!-- FOOTER -->
+    <footer class="footer container is-max-widescreen has-text-centered	">
         COPYRIGHT AND OTHER THINGS
     </footer>
 
+    <!-- SCRIPTS -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 
