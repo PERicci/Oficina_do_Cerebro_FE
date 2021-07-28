@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="has-navbar-fixed-top">
+<html lang="pt-BR has-navbar-fixed-top">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,56 +17,40 @@
     <div class="bg-img">
 
     </div>
-    
-    <!-- NAVBAR -->
-    <nav class="navbar is-fixed-top is-transparent container is-max-widescreen" role="navigation" aria-label="main navigation">
+    <div class="header">
+
+    </div>
+    <nav class="navbar is-fixed-top is-transparent container " role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a href="https://www.educasomar.com.br" target="_blank" class="navbar-item">
-                <img class="logo" src="assets/logo.png"> <p class="educaSomar has-text-black is-size-3-desktop is-size-4-touch has-text-weight-semibold">EDUCA SOMAR</p>
+            <a class="navbar-item" href="https://bulma.io">
+            <img class="logo" src="assets/logo.png" width="112" height="28">
             </a>
+            <p class="educaSomar navbar-item" >EDUCA SOMAR</p>
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
             </a>
         </div>
 
-        <div id="navbarMenu" class="navbar-menu navbar-end is-hoverable" id="navMenu">
+        <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item">
-                    Outros Eventos
-                </a>
-                <a class="navbar-item">
-                    Faça Parte
-                </a>
-                <a class="navbar-item">
-                    Contatos
-                </a>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-link is-rounded">
+                            <strong>Home</strong>
+                        </a>
+                        <a class="button is-link is-rounded">
+                            About
+                        </a>
+                        <a class="button is-link is-rounded">
+                            Contacts
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
-
-    <!-- CONTENT -->
-    <main class="mt-6 container is-max-widescreen">
-        <div id="highlight" class="columns">
-            <div class="column">JOGOS</div>
-            <div class="column">PALESTRAS</div>
-            <div class="column">DIVERSÃO</div>
-        </div>
-        <div id="formDiv">
-            <form action="" id="form">
-                <input type="text" name="" id="">
-                <input type="email" name="" id="">
-                <button type="submit" class="button is-link">PARTICIPAR</button>
-            </form>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer container is-max-widescreen has-text-centered	">
-        COPYRIGHT AND OTHER THINGS
-    </footer>
-
     <!-- SCRIPTS -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -89,7 +73,6 @@
                     el.classList.toggle('is-active');
                     $target.classList.toggle('is-active');
                     $target.classList.toggle('is-pulled-right');
-
                     });
                 });
             }

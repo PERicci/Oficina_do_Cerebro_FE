@@ -2,20 +2,33 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
+    top: 0;
     background-image: url(assets/bg.png) ;
     background-position: center;
     background-repeat:  no-repeat;
-    background-attachment: fixed;
-    background-size:  cover;
+    background-attachment: local;
+    background-size: cover;
+    z-index: -1;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    height: 57px;
+    opacity: 1;
 }
 
 .logo {
-    width: 40px;
+    width: 45px;
+    margin: -5px auto;
 }
 
 .educaSomar {
     font-family: 'Baloo Bhai 2', cursive;
-    margin-left: 5px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
 }
 
 .is-transparent{
