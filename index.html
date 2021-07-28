@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Candal&family=Concert+One&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Oficina do Cérebro</title>
+</head>
+<body>
+    <header class="container is-max-widescreen">
+        <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a href="https://www.educasomar.com.br" target="_blank" class="navbar-item">
+                    <img class="logo" src="assets/logo.png"> <p class="educaSomar has-text-black is-size-3-desktop is-size-4-touch has-text-weight-semibold">EDUCA SOMAR</p>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu navbar-end is-hoverable" id="navMenu">
+                <div class="navbar-end">
+                    <a class="navbar-item">
+                        Outros Eventos
+                    </a>
+                    <a class="navbar-item">
+                        Faça Parte
+                    </a>
+                    <a class="navbar-item">
+                        Contatos
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+
+            </div>
+        </nav>
+    </header>
+    <main class="container is-max-widescreen">
+        <div id="highlight" class="columns">
+            <div class="column">JOGOS</div>
+            <div class="column">PALESTRAS</div>
+            <div class="column">DIVERSÃO</div>
+        </div>
+        <div id="formDiv">
+            <form action="" id="form">
+                <input type="text" name="" id="">
+                <input type="email" name="" id="">
+                <button type="submit" class="button is-link">PARTICIPAR</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer container is-max-widescreen">
+        COPYRIGHT AND OTHER THINGS
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                    $target.classList.toggle('is-pulled-right');
+
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

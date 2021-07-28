@@ -1,0 +1,18 @@
+main {
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo {
+    width: 40px;
+}
+
+.educaSomar {
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-left: 5px;
+}
+
+.navbar-item img {
+    max-height: unset;
+}
