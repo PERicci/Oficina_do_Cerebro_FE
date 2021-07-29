@@ -44,7 +44,6 @@
 
 .logo {
     width: 45px;
-    margin: -5px auto;
 }
 
 .educaSomar {
@@ -52,6 +51,17 @@
     font-size: 1.6rem;
     font-weight: 600;
     color: black;
+}
+
+a.navbar-item {
+    margin: -5px;
+    transition: all 0.5s;
+}
+
+a.navbar-item:hover {
+
+    filter: saturate(200%)
+            drop-shadow(0px 0px 5px white);
 }
 
 .is-transparent{
