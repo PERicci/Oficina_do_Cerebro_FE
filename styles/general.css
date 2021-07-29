@@ -1,5 +1,5 @@
-.hero{
-    position: absolute;
+.banner{
+    position: relative;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -11,7 +11,7 @@
     z-index: -2;
 }
 
-.hero::after{
+.banner::after{
     content: "";
     position: absolute;
     z-index: -1;
