@@ -3,12 +3,12 @@
   --animationStep: calc(var(--animationTime)/3)
 }
 
-svg#projectLogoBannerVertical {
+#projectLogoBannerVertical {
   display: none;
   width: 95vw;
 }
 
-svg#projectLogoBanner {
+#projectLogoBanner {
   width: 1200px;
 }
 
