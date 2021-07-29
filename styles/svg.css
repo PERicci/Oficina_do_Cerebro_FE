@@ -1,3 +1,8 @@
+svg#projectLogoBannerVertical {
+  display: none;
+  width: 95vw;
+}
+
 svg#projectLogoBanner {
   width: 1200px;
 }
@@ -17,6 +22,16 @@ svg#projectLogoBanner {
   @media (max-width: 905px) {
     svg#projectLogoBanner {
         width: 95vw;
+    }
+  }
+
+  @media (max-width: 768px) {
+    svg#projectLogoBanner {
+        display: none;
+    }
+    
+    svg#projectLogoBannerVertical {
+      display: initial;
     }
   }
 
