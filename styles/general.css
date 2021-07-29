@@ -1,4 +1,4 @@
-.bg-img {
+.hero{
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -10,15 +10,6 @@
     background-size: cover;
     z-index: -2;
 }
-
-/* .bg-img::after {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    background-color: #1891cdb3;
-} */
 
 .hero::after{
     content: "";
