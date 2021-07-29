@@ -17,6 +17,10 @@
     margin: -5px auto;
 }
 
+.projectLogo {
+    width: 750px;
+}
+
 .educaSomar {
     font-family: 'Baloo Bhai 2', cursive;
     font-size: 1.6rem;
