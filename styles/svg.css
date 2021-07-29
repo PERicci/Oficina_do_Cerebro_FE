@@ -2,6 +2,24 @@ svg#projectLogoBanner {
   width: 1200px;
 }
 
+  @media (max-width: 1407px) {
+    svg#projectLogoBanner {
+        width: 1100px;
+    }
+  }
+
+  @media (max-width: 1105px) {
+    svg#projectLogoBanner {
+        width: 900px;
+    }
+  }
+
+  @media (max-width: 905px) {
+    svg#projectLogoBanner {
+        width: 95vw;
+    }
+  }
+
 svg #brain1 {
   fill: rgb(24, 147, 208);
 }
