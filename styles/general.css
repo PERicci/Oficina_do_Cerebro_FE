@@ -51,10 +51,50 @@ div.is-active {
 }
 
 .hero-body {
+    flex-direction: column;
     justify-content: center;
-    gap: 2%;
+    gap: 10px;
 }
 
-.box {
-    width: 20%;
+#form {
+    background-color: rgba(160, 202, 57, 0.7);
+    display: grid;
+    gap: 2%;
+    grid-template-areas:
+                        "name name email email"
+                        ". send send .";
+    width: 1100px;
+}
+
+    @media (max-width: 1407px) {
+        #form {
+            width: 1000px;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        #form {
+            width: 800px;
+        }
+    }
+
+    @media (max-width: 815px) {
+        #form {
+            grid-template-areas:
+                        "name name"
+                        "email email"
+                        "send send";
+            width: 95vw;
+        }
+    }
+
+#formName {
+    grid-area: name;
+}
+#formEmail {
+    grid-area: email;
+}
+
+#formButton {
+    grid-area: send;
 }

@@ -1,19 +1,19 @@
 svg#projectLogoBanner {
-  width: 60%;
+  width: 1200px;
 }
 
 svg #brain1 {
-  fill: #1894d0;
+  fill: rgb(24, 147, 208);
 }
 
 svg #brain2 {
-  fill: #f5cd11;
+  fill: rgb(245, 205, 17);
 }
 
 svg #brain3 {
-  fill: #a0ca39;
+  fill: rgb(160, 202, 57);
 }
 
 svg #brain4 {
-  fill: #ec0e89;
+  fill: rgb(236, 14, 137);
 }
