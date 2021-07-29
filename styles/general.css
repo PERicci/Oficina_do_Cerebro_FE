@@ -1,16 +1,24 @@
-/* .bg-img {
+.bg-img {
     position: absolute;
     width: 100vw;
     height: 100vh;
     top: 0;
-    background-image: url(assets/bg.png);
-    background-color: black;
+    background-image: url(../assets/bg.png);
     background-position: center;
     background-repeat:  no-repeat;
     background-attachment: local;
     background-size: cover;
+    z-index: -2;
+}
+
+.bg-img::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
-} */
+    background-color: hsla(200, 79%, 45%, 0.7);
+}
 
 .logo {
     width: 45px;
