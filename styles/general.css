@@ -160,6 +160,8 @@ div.is-active {
 }
 
 .card img {
+    position: relative;
     margin: 5%;
     width: 90%;
+    z-index: 1;
 }
