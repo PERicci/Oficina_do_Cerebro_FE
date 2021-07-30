@@ -144,3 +144,20 @@ div.is-active {
 #formButton {
     grid-area: send;
 }
+
+.cardContainer {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 0.5em;
+    justify-content: center;
+}
+
+.card, .card-image {
+    text-align: justify;
+    border-radius: 15px;
+}
+
+.card img {
+    margin: 5%;
+    width: 90%;
+}
