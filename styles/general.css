@@ -87,7 +87,7 @@ div.is-active {
     border-radius: 10px;
 }
 
-.hero-body {
+.hero-body-banner {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
@@ -156,6 +156,7 @@ div.is-active {
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	grid-gap: 0.5em;
     justify-content: center;
+    border: solid red;
 }
 
 .card {
