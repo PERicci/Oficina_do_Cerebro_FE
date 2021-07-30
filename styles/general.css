@@ -88,7 +88,6 @@ div.is-active {
 }
 
 .hero-body {
-    border: solid red;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
