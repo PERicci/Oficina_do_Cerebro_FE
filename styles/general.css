@@ -152,9 +152,11 @@ div.is-active {
     justify-content: center;
 }
 
-.card, .card-image {
+.card {
     text-align: justify;
     border-radius: 15px;
+    box-shadow: 0 2px 4px rgb(50, 50, 50),
+                0 -2px 4px rgb(50, 50, 50);
 }
 
 .card img {
