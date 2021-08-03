@@ -22,4 +22,23 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    const $videoButtons = Array.prototype.slice.call(document.querySelectorAll('.videoButton'), 0);
+    const $videoContainer = document.getElementById('videoContainer')
+
+    if ($videoButtons.length > 0) {
+
+        $videoButtons.forEach( el => {
+            el.addEventListener('click', () => {
+
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            el.classList.toggle('isDisplayNone');
+            $target.classList.toggle('isDisplayNone');
+            $videoContainer.classList.toggle('videoContainerSize');
+
+            });
+        });
+    }
 });
