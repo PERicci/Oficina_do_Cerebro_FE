@@ -7,6 +7,18 @@ body {
     z-index: -2;
 }
 
+.educaSomarName {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: 600;
+}
+
+/* GENERAL RULES */
+
+.is-transparent{
+    background-color: transparent;
+    background-image: none;
+}
+
 /* NAVBAR */
 
 #navbarBg {
@@ -23,14 +35,12 @@ body {
     box-shadow: inset 0 0 5px 0 white;
 }
 
-.logo {
+.navbar .educaSomarLogo {
     width: 45px;
 }
 
-.educaSomar {
-    font-family: 'Baloo Bhai 2', cursive;
+.navbar .educaSomarName {
     font-size: 1.6rem;
-    font-weight: 600;
     color: black;
 }
 
@@ -43,11 +53,6 @@ a.navbar-item:hover {
 
     filter: saturate(200%)
             drop-shadow(0px 0px 5px white);
-}
-
-.is-transparent{
-    background-color: transparent;
-    background-image: none;
 }
 
 .navbar-item img {
@@ -69,7 +74,7 @@ a.navbar-item:hover {
 
 /* MAIN BANNER */
 
-.banner{
+.mainBanner{
     position: relative;
     width: 100vw;
     height: auto;
@@ -82,7 +87,7 @@ a.navbar-item:hover {
     z-index: -1;
 }
 
-.banner::after{
+.mainBanner::after{
     content: "";
     position: absolute;
     z-index: -1;
@@ -99,6 +104,8 @@ a.navbar-item:hover {
     max-height: 100vh;
 }
 
+/* FORM */
+
 #form {
     background-color: #ffffff00;
     display: grid;
@@ -110,43 +117,19 @@ a.navbar-item:hover {
     box-shadow: none;
 }
 
-    @media (max-width: 1407px) {
-        #form {
-            width: calc(1.2 * 100vh);
-        }
-    }
-
-    @media (max-width: 1023px) {
-        #form {
-            width: 800px;
-        }
-        :root {
-            --navbarHeight: 54px;
-        }
-    }
-
-    @media (max-width: 815px) {
-        #form {
-            grid-template-areas:
-                        "name name"
-                        "email email"
-                        "send send";
-            width: 95vw;
-        }
-    }
-
 #form .input, #form button{
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
 
-.input::placeholder {
+#form .input::placeholder {
     font-size: 1.4rem;
 }
 
 #formName {
     grid-area: name;
 }
+
 #formEmail {
     grid-area: email;
 }
@@ -155,6 +138,8 @@ a.navbar-item:hover {
     grid-area: send;
 }
 
+/* CARDS */
+
 .cardContainer {
     display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -162,16 +147,55 @@ a.navbar-item:hover {
     justify-content: center;
 }
 
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2%;
+    border-radius: 15px 15px 0 0;
+    background-color: red;
+}
+
 .card {
+    position: relative;
     text-align: justify;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgb(50, 50, 50),
-                0 -2px 4px rgb(50, 50, 50);
+    box-shadow: 0 20px 30px -20px rgb(50, 50, 50),
+                0 -20px 30px -20px rgb(50, 50, 50);
+    z-index: 2;
 }
 
 .card img {
     position: relative;
     margin: 5%;
     width: 90%;
-    z-index: 1;
+    z-index: 2;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1407px) {
+    #form {
+        width: calc(1.2 * 100vh);
+    }
+}
+
+@media (max-width: 1023px) {
+    #form {
+        width: 800px;
+    }
+    :root {
+        --navbarHeight: 54px;
+    }
+}
+
+@media (max-width: 815px) {
+    #form {
+        grid-template-areas:
+                    "name name"
+                    "email email"
+                    "send send";
+        width: 95vw;
+    }
 }
