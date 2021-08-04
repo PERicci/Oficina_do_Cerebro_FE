@@ -37,5 +37,5 @@ let showVideo = (e) => {
 
   setTimeout(() => {
     section.scrollIntoView({behavior: "smooth", block: "end"});
-  }, 1000);
+  }, 500);
 }
