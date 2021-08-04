@@ -28,9 +28,7 @@ let showVideo = async (e) => {
   const button = await e;
   const embedVideo = document.getElementById(button.dataset.target);
   const parent = await button.parentElement;
-  const section = button.parentElement.parentElement;
 
-  console.log(section);
   button.classList.toggle('isDisplayNone');
   embedVideo.classList.toggle('isDisplayNone');
   parent.classList.toggle('videoContainerSize');
