@@ -1,44 +1,54 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
 
-        // Add a click event on each of them
-        $navbarBurgers.forEach( el => {
-            el.addEventListener('click', () => {
+    // Add a click event on each of them
+    $navbarBurgers.forEach(el => {
+      el.addEventListener('click', () => {
 
-            // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
 
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-            $target.classList.toggle('is-pulled-right')
-            ;
-            });
-        });
-    }
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+        $target.classList.toggle('is-pulled-right')
+          ;
+      });
+    });
+  }
 
-    const $videoButtons = Array.prototype.slice.call(document.querySelectorAll('.videoButton'), 0);
-    const $videoContainer = document.getElementById('videoContainer')
+  // const $videoButtons = Array.prototype.slice.call(document.querySelectorAll('.videoButton'), 0);
+  // const $videoContainer = document.getElementById('videoContainer')
 
-    if ($videoButtons.length > 0) {
+  // if ($videoButtons.length > 0) {
 
-        $videoButtons.forEach( el => {
-            el.addEventListener('click', () => {
+  //   $videoButtons.forEach(el => {
+  //     el.addEventListener('click', () => {
 
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
+  //       const target = el.dataset.target;
+  //       const $target = document.getElementById(target);
 
-            el.classList.toggle('isDisplayNone');
-            $target.classList.toggle('isDisplayNone');
-            $videoContainer.classList.toggle('videoContainerSize');
+  //       el.classList.toggle('isDisplayNone');
+  //       $target.classList.toggle('isDisplayNone');
+  //       $videoContainer.classList.toggle('videoContainerSize');
 
-            });
-        });
-    }
+  //     });
+  //   });
+  // }
 });
+
+function showVideo(e) {
+  const button = e;
+  const parent = e.parentElement;
+  const target = document.getElementById(e.dataset.target);
+
+  console.log(button);
+  console.log(parent);
+  console.log(target);
+}
