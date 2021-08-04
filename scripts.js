@@ -22,33 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-
-  // const $videoButtons = Array.prototype.slice.call(document.querySelectorAll('.videoButton'), 0);
-  // const $videoContainer = document.getElementById('videoContainer')
-
-  // if ($videoButtons.length > 0) {
-
-  //   $videoButtons.forEach(el => {
-  //     el.addEventListener('click', () => {
-
-  //       const target = el.dataset.target;
-  //       const $target = document.getElementById(target);
-
-  //       el.classList.toggle('isDisplayNone');
-  //       $target.classList.toggle('isDisplayNone');
-  //       $videoContainer.classList.toggle('videoContainerSize');
-
-  //     });
-  //   });
-  // }
 });
 
-function showVideo(e) {
-  const button = e;
-  const parent = e.parentElement;
-  const target = document.getElementById(e.dataset.target);
+let showVideo = async (e) => {
+  const button = await e;
+  const embedVideo = document.getElementById(button.dataset.target);
+  const parent = await button.parentElement;
+  const section = button.parentElement.parentElement;
 
-  console.log(button);
-  console.log(parent);
-  console.log(target);
+  console.log(section);
+  button.classList.toggle('isDisplayNone');
+  embedVideo.classList.toggle('isDisplayNone');
+  parent.classList.toggle('videoContainerSize');
+
+  setTimeout(() => {
+    section.scrollIntoView({behavior: "smooth", block: "end"});
+  }, 500);
 }

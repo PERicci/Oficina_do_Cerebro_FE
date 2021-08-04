@@ -1,6 +1,8 @@
 /* GENERAL RULES */
 :root {
     --navbarHeight: 64px;
+    --videoWidth: calc(80vh * 16/9);
+    --videoAspectRatio: calc(9/16);
 }
 
 body {
@@ -215,14 +217,13 @@ a.navbar-item:hover {
 
 .videoContainer {
     margin: auto;
-    --videoWidth: 80%;
-    --videoAspectRatio: calc(9/16);
     position: relative;
     height: 15vh;
     transition: all .5s ease;
 }
 
 .videoContainerSize {
+    box-sizing: border-box;
     width: var(--videoWidth);
     height: 0;
     padding-bottom: calc(var(--videoAspectRatio) * var(--videoWidth));
@@ -247,6 +248,7 @@ a.navbar-item:hover {
     width: 100%;
     height: 100%;
     transition: all 1s ease;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
 }
 
 
