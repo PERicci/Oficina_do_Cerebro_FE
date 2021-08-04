@@ -24,10 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-let showVideo = async (e) => {
-  const button = await e;
+let showVideo = (e) => {
+  const button = e;
   const embedVideo = document.getElementById(button.dataset.target);
-  const parent = await button.parentElement;
+  const parent = button.parentElement;
+  const section = parent.parentElement;
+
 
   button.classList.toggle('isDisplayNone');
   embedVideo.classList.toggle('isDisplayNone');
@@ -35,5 +37,5 @@ let showVideo = async (e) => {
 
   setTimeout(() => {
     section.scrollIntoView({behavior: "smooth", block: "end"});
-  }, 500);
+  }, 1000);
 }
