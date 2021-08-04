@@ -292,7 +292,12 @@ a.navbar-item:hover {
         font-size: 1.2rem;
     }
 
-    .videoContainer {
+    :root {
         --videoWidth: 100%;
+    }
+
+    #videoHeroBody {
+        padding: 0;
+        margin: 1.5rem -1rem;
     }
 }

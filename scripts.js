@@ -36,6 +36,6 @@ let showVideo = (e) => {
   parent.classList.toggle('videoContainerSize');
 
   setTimeout(() => {
-    section.scrollIntoView({behavior: "smooth", block: "end"});
+    section.scrollIntoView({behavior: "smooth", block: "center"});
   }, 500);
 }
