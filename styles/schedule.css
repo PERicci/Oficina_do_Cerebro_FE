@@ -1,5 +1,53 @@
 /* SCHEDULE */
 
 #scheduleHeroBody {
-    background-color: rgb(236, 14, 137);
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background-image: url(../assets/childPlay.jpg);
+    background-position: 10% center;
+    background-repeat:  no-repeat;
+    background-attachment: local;
+    background-size: auto 130%;
+    z-index: -1;
+}
+
+#scheduleHeroBody::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(236, 14, 137), transparent 5%),
+                linear-gradient(to top, rgb(236, 14, 137), transparent 5%),
+                linear-gradient(to left, rgb(236, 14, 137) 70%, transparent 75%),
+                linear-gradient(to right, rgb(236, 14, 137) 7%, transparent 12%),
+                rgba(236, 14, 136, 0.4);
+}
+
+#scheduleHeroBody .title {
+    /* font-family: 'Concert One', cursive; */
+    font-family: 'Candal', sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#scheduleList {
+    margin: 0 15% 0 30%;
+    text-align: justify;
+}
+
+.scheduleItem {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 10% auto;
+}
+
+.scheduleItemImage {
+    
 }
