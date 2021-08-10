@@ -1,0 +1,47 @@
+/* RESPONSIVENESS */
+
+@media (max-width: 1407px) {
+  #form {
+      width: calc(1.2 * 100vh);
+  }
+
+  .videoContainer {
+      --videoWidth: 90%;
+  }
+}
+
+@media (max-width: 1023px) {
+  #form {
+      width: 800px;
+  }
+  :root {
+      --navbarHeight: 52px;
+  }
+
+  .videoButton {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 815px) {
+  #form {
+      grid-template-areas:
+                  "name name"
+                  "email email"
+                  "send send";
+      width: 95vw;
+  }
+
+  .videoButton {
+      font-size: 1.2rem;
+  }
+
+  :root {
+      --videoWidth: 100%;
+  }
+
+  #videoHeroBody {
+      padding: 0;
+      margin: 1.5rem -1rem;
+  }
+}

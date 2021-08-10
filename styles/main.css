@@ -1,0 +1,65 @@
+/* MAIN BANNER */
+
+.mainBanner{
+  position: relative;
+  width: 100vw;
+  height: auto;
+  top: 0;
+  background-image: url(../assets/bg.png);
+  background-position: center;
+  background-repeat:  no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  z-index: -1;
+}
+
+.mainBanner::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #1891cdb3;
+}
+
+.hero-body-banner {
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: var(--navbarHeight);
+  max-height: 100vh;
+}
+
+/* FORM */
+
+#form {
+  background-color: #ffffff00;
+  display: grid;
+  gap: 2%;
+  grid-template-areas:
+                      "name name email email"
+                      ". send send .";
+  width: calc(1.2 * 100vh);
+  box-shadow: none;
+}
+
+#form .input, #form button{
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: var(--borderRadiudDefault);
+}
+
+#form .input::placeholder {
+  font-size: 1.4rem;
+}
+
+#formName {
+  grid-area: name;
+}
+
+#formEmail {
+  grid-area: email;
+}
+
+#formButton {
+  grid-area: send;
+}
