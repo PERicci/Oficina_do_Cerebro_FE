@@ -31,7 +31,8 @@
   }
 
   #scheduleHeroBody {
-    background-position: 2% center;
+    background-position: left bottom;
+    background-size: auto 94%;
   }
 
   #schedule {
@@ -43,7 +44,26 @@
   }
 
   .scheduleItem {
+    position: relative;
     grid-template-columns: 14% auto;
+    padding: 3% 3% 3% 2%;
+  }
+
+  .scheduleItem::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+
+  .scheduleItem::after {
+    content: '';
+    border-bottom: unset;
+    transition: all 0.5s;
   }
 
 }
@@ -55,6 +75,14 @@
                   "email email"
                   "send send";
       width: 95vw;
+  }
+
+  .card {
+    margin-bottom: 5%;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
   }
 
   .videoButton {
@@ -71,19 +99,20 @@
   }
 
   #scheduleHeroBody {
-    background-position: center center;
+    background-position: center bottom;
   }
 
   #schedule {
-    margin: 0;
+    margin: 0 -0.4rem 0 -1.5rem;
   }
 
   .scheduleItem {
     grid-template-columns: 20% auto;
+    padding: 1% 0.5% 1% 0%;
   }
 
   .scheduleItemImage {
-    justify-self: left;
+    justify-self: center;
   }
 
 }

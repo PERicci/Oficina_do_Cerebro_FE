@@ -1,11 +1,12 @@
 /* SCHEDULE */
 
 #scheduleHeroBody {
+  position: relative;
   color: white;
   width: 100vw;
   height: auto;
-  background: url(../assets/childPlay.jpg) 18% center no-repeat local, rgb(236, 14, 136);
-  background-size: auto 130%;
+  background: url(../assets/childPlayVertical.png) 18% center no-repeat local, rgb(236, 14, 136);
+  background-size: auto 100%;
 }
 
 #schedule {
@@ -53,6 +54,11 @@
 
 .scheduleItemImage {
   justify-self: right;
+  z-index: 1;
+}
+
+.scheduleItemContent {
+  z-index: 1;
 }
 
 .scheduleItemTitle {
