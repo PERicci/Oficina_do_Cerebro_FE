@@ -1,0 +1,39 @@
+.gridDisplay {
+  display: grid;
+  grid-template-areas:
+    "l1c1"
+    "l2c1"
+    "l3c1"
+    "l4c1"
+    "l5c1"
+    "l6c1"
+    "l7c1";
+}
+
+.l1c1 {
+  grid-area: l1c1;
+}
+
+.l2c1 {
+  grid-area: l2c1;
+}
+
+.l3c1 {
+  grid-area: l3c1;
+}
+
+.l4c1 {
+  grid-area: l4c1;
+}
+
+.l5c1 {
+  grid-area: l5c1;
+}
+
+.l6c1 {
+  grid-area: l6c1;
+}
+
+.l7c1 {
+  grid-area: l7c1;
+}

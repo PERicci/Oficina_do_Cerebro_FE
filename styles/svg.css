@@ -1,9 +1,9 @@
-svg#projectLogoBannerVertical {
+#projectLogoBannerVertical {
   display: none;
   width: 95vw;
 }
 
-svg#projectLogoBanner {
+#projectLogoBanner {
   width: 1200px;
 }
 
@@ -35,18 +35,32 @@ svg#projectLogoBanner {
     }
   }
 
-svg #brain1 {
+#brain1, #cLetter, #bLetter {
   fill: rgb(24, 147, 208);
+  animation: pulse 24s 2.5s ease infinite;
 }
 
-svg #brain2 {
+#brain2, #e2Letter {
   fill: rgb(245, 205, 17);
+  animation: pulse 24s 3s linear infinite;
 }
 
-svg #brain3 {
+#brain3, #r1Letter, #oLetter {
   fill: rgb(160, 202, 57);
+  animation: pulse 24s 3.5s linear infinite;
 }
 
-svg #brain4 {
+#brain4, #e1Letter, #r2Letter {
   fill: rgb(236, 14, 137);
+  animation: pulse 24s 4s linear infinite;
+}
+
+@keyframes pulse {
+  0% {filter: contrast(100%);}
+  12.5% {filter: contrast(150%) saturate(150%) brightness(150%);}
+  25% {filter: contrast(100%);}
+  37.5% {filter: contrast(150%) saturate(150%) brightness(150%);}
+  50% {filter: contrast(100%);}
+  62.5% {filter: contrast(150%) saturate(150%) brightness(150%);}
+  75%, 100% {filter: contrast(100%);}
 }

@@ -1,0 +1,70 @@
+/* SCHEDULE */
+
+#scheduleHeroBody {
+  position: relative;
+  color: white;
+  width: 100vw;
+  height: auto;
+  background: url(../assets/childPlayVertical.png) 18% center no-repeat local, rgb(236, 14, 136);
+  background-size: auto 100%;
+}
+
+#schedule {
+  margin: 0 14vw 0 37%;
+}
+
+#scheduleHeroBody .title {
+  font-family: 'Candal', sans-serif;
+  font-size: 3rem;
+  text-align: left;
+  color: white;
+  margin: 0 0 3rem 0.5rem;
+}
+
+#scheduleHeroBody .subtitle {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.scheduleItem {
+  position: relative;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 10% auto;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.scheduleItem::after {
+  content: '';
+  position: absolute;
+  bottom: -3%;
+  left: -3%;
+  border-bottom: solid 1px white;
+  width: 0;
+  border-radius: 0 0 50% 50%;
+  transition: all 0.5s;
+}
+
+.scheduleItem:hover::after {
+  width: 110%;
+  transition: all 0.5s;
+}
+
+.scheduleItemImage {
+  justify-self: right;
+  z-index: 1;
+}
+
+.scheduleItemContent {
+  z-index: 1;
+}
+
+.scheduleItemTitle {
+  text-align: left;
+}
+
+.scheduleItemText {
+  text-align: justify;
+}
