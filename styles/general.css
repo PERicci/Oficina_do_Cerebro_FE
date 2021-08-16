@@ -119,10 +119,10 @@ div.is-active {
         }
     }
 
-#form .input, #form button{
+/* #form .input, #form button{
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-}
+} */
 
 .input::placeholder {
     font-size: 1.4rem;
@@ -135,6 +135,103 @@ div.is-active {
     grid-area: email;
 }
 
-#formButton {
+/* #formButton {
     grid-area: send;
+} */
+
+
+/* ------------------ START ANIMATION IN BUTTON ------------------  */
+
+/* start button */
+/* .is-animation {
+  height: 50px;
+  width: 250px;
+  background: #21cd98;
+  background-size: 360% 100%;
+  overflow: hidden;
+} */
+/* end button */
+
+/* start button label */
+/* .is-animation:after {
+  content: attr(data-name);
+  content: normal;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bolder;
+} */
+/* end button label */
+
+/* start animation button */
+/* .is-animation:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0px;
+  height: 200%;
+  width: 200%;
+  background: #ffdc7d;
+  z-index: 0;
+  transition: all 0.3s linear;
+} */
+/* .is-animation:hover:before,
+.is-animation:focus-visible:before {
+  left: 100%;
+}
+.is-animation:hover:after {
+  color: white;
+}
+.is-animation:hover {
+  -webkit-box-shadow: 0px 4px 10px -6px black;
+  box-shadow: 0px 4px 10px -6px black;
+} */
+/* end animation button */
+
+/* .is-animation:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 0px 5px #480f5d;
+  box-shadow: 0px 0px 0px 5px #480f5d;
+} */
+/* ------------------ END ANIMATION IN BUTTON ------------------  */
+
+.is-animation {
+  background-color: #ffdc7d;
+  height: 50px;
+  width: 255px;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+
+.is-animation:after {
+  content: attr(data-name);
+  top: 50%;
+  position: absolute;
+  left: 54%;
+  -webkit-transform: translate(-50%, -50%);
+  font-weight: bolder;
+}
+
+.is-animation:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0px;
+  height: 200%;
+  width: 200%;
+  background: #ffdc7d;
+  z-index: 0;
+  transition: all 0.3s linear;
+}
+
+.is-animation:hover {
+  background-color: #21cd98;
+  color: white;
+}
+
+.is-animation:hover:before,
+.is-animation:focus-visible:before {
+  left: 100%;
 }
