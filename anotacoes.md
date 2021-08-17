@@ -1,6 +1,6 @@
-
-
-
 - adicionar input do telefone (sempre com mask)
 - trabalhar com modal no vídeo
 - Encaixar algum texto entre os highlights
+- colcoar ebooks para os mediadores
+- ver qual a dificuldade em geral e poder soluciona-las
+- ter uma área de inscrições com um valor simbólico
