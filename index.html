@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="styles/schedule.css">
   <link rel="stylesheet" href="styles/responsiveness.css">
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
 
   <!-- SCRIPTS -->
   <script src="https://www.youtube.com/player_api"></script>
@@ -202,8 +203,20 @@
             <input class="input is-medium" type="email" placeholder="Insira seu e-mail">
           </div>
         </div>
-        <button id="formButton" class="button is-warning is-medium">Quero participar!</button>
-        <button id="videoButton" class="button is-warning is-medium" onclick="showVideo(this)" data-target="videoContainer">Video</button>
+        <button id="formButton" class="button is-medium">
+          <span class="icon">
+            <i class="mdi mdi-send mdi-rotate-315"></i>
+          </span>
+          Quero participar!
+          <span class="buttonEffect"></span>
+        </button>
+        <button id="videoButton" class="button is-medium" onclick="showVideo(this)" data-target="videoContainer">
+          <span class="icon">
+            <i class="mdi mdi-send mdi-rotate-315"></i>
+          </span>
+          Video
+          <span class="buttonEffect"></span>
+        </button>
       </form>
     </div>
     <div id="eventData">

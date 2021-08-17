@@ -44,9 +44,35 @@
   box-shadow: none;
 }
 
-#form .input, #form button{
+#form .input, #form .button{
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
   border-radius: var(--borderRadiusDefault);
+}
+
+#form .button {
+  position: relative;
+  background-color: rgb(255, 220, 125);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.buttonEffect{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(-120%, 0);
+  opacity: 0;
+  background-color: lime;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+
+#form .button:hover .buttonEffect {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 0.5s linear;
 }
 
 #form .input::placeholder {
@@ -71,4 +97,6 @@
 
 #videoButton {
   grid-area: video;
+  background-color: rgb(255, 220, 125);
 }
+
