@@ -8,6 +8,7 @@
 
   #form {
       width: calc(1.2 * 100vh);
+      max-width: 100vw;
   }
 
   #scheduleHeroBody {
