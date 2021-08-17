@@ -21,13 +21,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
-  border-radius: var(--borderRadiudDefault);
+  border-radius: var(--borderRadiusDefault);
   transition: all 1s ease;
 }
 
 .videoContainer iframe {
   position: absolute;
-  border-radius: var(--borderRadiudDefault);
+  border-radius: var(--borderRadiusDefault);
   top: 0;
   left: 0;
   width: 100%;

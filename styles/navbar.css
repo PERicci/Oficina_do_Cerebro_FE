@@ -39,7 +39,7 @@ a.navbar-item:hover {
 }
 
 .navbar div.is-active {
-  border-radius: calc(var(--borderRadiudDefault) / 2);
+  border-radius: calc(var(--borderRadiusDefault) / 2);
   background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -48,5 +48,5 @@ a.navbar-item:hover {
 }
 
 .navbar .divButton .button {
-  border-radius: calc(var(--borderRadiudDefault) / 2);
+  border-radius: calc(var(--borderRadiusDefault) / 2);
 }

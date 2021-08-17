@@ -34,21 +34,27 @@
 #form {
   background-color: #ffffff00;
   display: grid;
-  gap: 2%;
+  row-gap: 10%;
+  column-gap: 1%;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-areas:
-                      "name name email email"
-                      ". send send .";
+                      "name name name email email email"
+                      ". send send video video .";
   width: calc(1.2 * 100vh);
   box-shadow: none;
 }
 
 #form .input, #form button{
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
-  border-radius: var(--borderRadiudDefault);
+  border-radius: var(--borderRadiusDefault);
 }
 
 #form .input::placeholder {
   font-size: 1.4rem;
+}
+
+#form .field {
+  margin: 0;
 }
 
 #formName {
@@ -61,4 +67,8 @@
 
 #formButton {
   grid-area: send;
+}
+
+#videoButton {
+  grid-area: video;
 }

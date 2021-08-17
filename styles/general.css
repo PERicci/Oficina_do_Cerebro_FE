@@ -3,7 +3,7 @@
     --navbarHeight: 64px;
     --videoWidth: calc(80vh * 16/9);
     --videoAspectRatio: calc(9/16);
-    --borderRadiudDefault: 1.5vmin;
+    --borderRadiusDefault: 1.5vmin;
 }
 
 body {
