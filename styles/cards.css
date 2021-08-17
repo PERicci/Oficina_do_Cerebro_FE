@@ -2,8 +2,8 @@
 
 .cardContainer {
   display: grid;
-grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 0.5em;
   justify-items: center !important;
 }
 
@@ -56,6 +56,6 @@ grid-gap: 0.5em;
 }
 
   .card:hover .card-footer h2 {
-      color: white;
-      font-weight: 700;
+    color: white;
+    font-weight: 700;
   }

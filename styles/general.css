@@ -34,3 +34,7 @@ body {
     display: none;
     transition: all .5 ease;
 }
+
+section {
+    width: 100vw !important;
+}

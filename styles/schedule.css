@@ -15,10 +15,10 @@
 
 #scheduleHeroBody .title {
   font-family: 'Candal', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: left;
   color: white;
-  margin: 0 0 3rem 0.5rem;
+  margin: -1.5rem 0 3rem 0.5rem;
 }
 
 #scheduleHeroBody .subtitle {
