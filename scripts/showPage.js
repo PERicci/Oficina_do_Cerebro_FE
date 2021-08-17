@@ -1,5 +1,7 @@
 window.onload = function() {
-  document.body.classList.toggle('isHidden')
+  setTimeout(() => {
+    document.body.classList.toggle('isHidden')
+  }, 200)  
 }
 
 var video
