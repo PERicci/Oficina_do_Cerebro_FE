@@ -13,11 +13,30 @@
 
 #video {
   position: fixed;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: var(--videoWidth);
   height: var(--videoHeight);
   border-radius: var(--borderRadiusDefault);
   z-index: 32;
+}
+
+#closeVideoDiv {
+  position: fixed;
+  top: calc(48vh + var(--videoHeight) / 2);
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: var(--videoWidth);
+  height: 40px;
+  z-index: 33;
+  text-align: center;
+  color: silver;
+  font-size: 2.5rem;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+#closeVideoButton {
+  display: inline-block;
+  cursor: pointer;
 }

@@ -20,12 +20,17 @@
 }
 
 @media (max-width: 1023px) {
-  #form {
-      width: 800px;
-  }
   :root {
       --navbarHeight: 52px;
       --videoWidth: 90vw;
+  }
+
+  #form {
+    width: 800px;
+  }
+
+  #closeVideoDiv {
+    font-size: 2rem;
   }
 
   #scheduleHeroBody {
@@ -80,6 +85,10 @@
                   "video video";
       row-gap: 5%;
       width: 95vw;
+  }
+
+  #closeVideoDiv {
+    font-size: 1.5rem;
   }
 
   .card {
