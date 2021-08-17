@@ -2,11 +2,12 @@
 <html lang="pt-BR has-navbar-fixed-top">
 
 <!-- -----------------------HEAD----------------------- -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,16 +30,19 @@
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
   <!-- SCRIPTS -->
+  <script src="https://www.youtube.com/player_api"></script>
   <script src="scripts/navbarBurger.js"></script>
-  <script src="scripts/showVideo.js"></script>
+  <script src="scripts/video.js"></script>
   <script src="https://kit.fontawesome.com/60e8cca32b.js" crossorigin="anonymous"></script>
+  <script src="scripts/showPage.js"></script>
 
   <!-- TITLE -->
   <title>Oficina do Cérebro</title>
 </head>
 
 <!-- -----------------------BODY----------------------- -->
-<body>
+
+<body class="isHidden">
 
   <!-- NAVBAR -->
 
@@ -50,7 +54,7 @@
         <img class="educaSomarLogo" src="assets/logo.png" width="112" height="28">
         <p class="educaSomarName navbar-item">EDUCA SOMAR</p>
       </a>
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="openBurger(this)">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -186,7 +190,7 @@
         </g>
       </svg>
 
-      <form id="form" class="box">
+      <form id="form" class="box" onsubmit="return false">
         <div id="formName" class="field">
           <div class="control">
             <input class="input is-medium" type="name" placeholder="Insira seu nome">
@@ -198,10 +202,18 @@
           </div>
         </div>
         <button id="formButton" class="button is-warning is-medium">Quero participar!</button>
-        <button id="videoButton" class="button is-warning is-medium">Video</button>
+        <button id="videoButton" class="button is-warning is-medium" onclick="showVideo(this)" data-target="videoContainer">Video</button>
       </form>
     </div>
   </section>
+
+  <!-- VIDEO MODAL -->
+
+  <div id="videoContainer" class="isDisplayNone" onclick="hideVideo(this)">
+    <iframe id="video" width=100% src="https://www.youtube.com/embed/COj1g8q9_3k?enablejsapi=1&html5=1" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
 
   <!-- GRID DISPLAY -->
 
@@ -269,62 +281,56 @@
 
           <ul id="scheduleItems">
             <li class="scheduleItem">
-              <img class="scheduleItemImage" src="https://img.icons8.com/doodle/96/000000/children-pyramid.png"/>
+              <img class="scheduleItemImage" src="https://img.icons8.com/doodle/96/000000/children-pyramid.png" />
               <div class="scheduleItemContent">
                 <h2 class="subtitle">Catipsun</h2>
-                <p class="scheduleItemText">Scratch sleep on my human's head give attitude, for eat a plant, kill a hand or do not try to mix old food with new one to fool me!</p>
+                <p class="scheduleItemText">Scratch sleep on my human's head give attitude, for eat a plant, kill a hand
+                  or do not try to mix old food with new one to fool me!</p>
               </div>
             </li>
             <li class="scheduleItem">
-              <img class="scheduleItemImage" src="https://img.icons8.com/doodle/96/000000/children-pyramid.png"/>
+              <img class="scheduleItemImage" src="https://img.icons8.com/doodle/96/000000/children-pyramid.png" />
               <div class="scheduleItemContent">
                 <h2 class="subtitle">Catipsun</h2>
-                <p class="scheduleItemText">Scratch sleep on my human's head give attitude, for eat a plant, kill a hand or do not try to mix old food with new one to fool me!</p>
+                <p class="scheduleItemText">Scratch sleep on my human's head give attitude, for eat a plant, kill a hand
+                  or do not try to mix old food with new one to fool me!</p>
               </div>
             </li>
             <li class="scheduleItem">
-              <img class="scheduleItemImage" src="https://img.icons8.com/doodle/96/000000/children-pyramid.png"/>
+              <img class="scheduleItemImage" src="https://img.icons8.com/doodle/96/000000/children-pyramid.png" />
               <div class="scheduleItemContent">
                 <h2 class="subtitle">Catipsun</h2>
-                <p class="scheduleItemText">Scratch sleep on my human's head give attitude, for eat a plant, kill a hand or do not try to mix old food with new one to fool me!</p>
+                <p class="scheduleItemText">Scratch sleep on my human's head give attitude, for eat a plant, kill a hand
+                  or do not try to mix old food with new one to fool me!</p>
               </div>
             </li>
             <li class="scheduleItem">
-              <img class="scheduleItemImage" src="https://img.icons8.com/doodle/96/000000/children-pyramid.png"/>
+              <img class="scheduleItemImage" src="https://img.icons8.com/doodle/96/000000/children-pyramid.png" />
               <div class="scheduleItemContent">
                 <h2 class="subtitle">Catipsun</h2>
-                <p class="scheduleItemText">Scratch sleep on my human's head give attitude, for eat a plant, kill a hand or do not try to mix old food with new one to fool me!</p>
+                <p class="scheduleItemText">Scratch sleep on my human's head give attitude, for eat a plant, kill a hand
+                  or do not try to mix old food with new one to fool me!</p>
               </div>
             </li>
             <li class="scheduleItem">
-              <img class="scheduleItemImage" src="https://img.icons8.com/doodle/96/000000/children-pyramid.png"/>
+              <img class="scheduleItemImage" src="https://img.icons8.com/doodle/96/000000/children-pyramid.png" />
               <div class="scheduleItemContent">
                 <h2 class="subtitle">Catipsun</h2>
-                <p class="scheduleItemText">Scratch sleep on my human's head give attitude, for eat a plant, kill a hand or do not try to mix old food with new one to fool me!</p>
+                <p class="scheduleItemText">Scratch sleep on my human's head give attitude, for eat a plant, kill a hand
+                  or do not try to mix old food with new one to fool me!</p>
               </div>
             </li>
             <li class="scheduleItem">
-              <img class="scheduleItemImage" src="https://img.icons8.com/doodle/96/000000/children-pyramid.png"/>
+              <img class="scheduleItemImage" src="https://img.icons8.com/doodle/96/000000/children-pyramid.png" />
               <div class="scheduleItemContent">
                 <h2 class="subtitle">Catipsun</h2>
-                <p class="scheduleItemText">Scratch sleep on my human's head give attitude, for eat a plant, kill a hand or do not try to mix old food with new one to fool me!</p>
+                <p class="scheduleItemText">Scratch sleep on my human's head give attitude, for eat a plant, kill a hand
+                  or do not try to mix old food with new one to fool me!</p>
               </div>
             </li>
           </ul>
         </div>
       </div>
-      
-      <!-- <div id="videoHeroBody" class="hero-body">
-        <div id="videoContainer" class="videoContainer">
-          <button class="videoButton button is-warning is-large" data-target="video" onclick="showVideo(this)">
-            ASSISTA UM VÍDEO LEGAL!
-          </button>
-          <iframe id="video" class="isDisplayNone" width=100% src="https://www.youtube.com/embed/COj1g8q9_3k"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-      </div> -->
     </section>
 
   </div>

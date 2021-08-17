@@ -1,6 +1,11 @@
 /* RESPONSIVENESS */
 
 @media (max-width: 1407px) {
+
+  :root {
+    --videoWidth: 80vw;
+  }
+
   #form {
       width: calc(1.2 * 100vh);
   }
@@ -20,6 +25,7 @@
   }
   :root {
       --navbarHeight: 52px;
+      --videoWidth: 90vw;
   }
 
   #scheduleHeroBody {
@@ -61,6 +67,11 @@
 }
 
 @media (max-width: 815px) {
+
+  :root {
+    --videoWidth: 95vw;
+  }
+
   #form {
       grid-template-areas:
                   "name name"

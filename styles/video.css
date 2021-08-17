@@ -1,37 +1,23 @@
 /* VIDEO */
 
-.videoContainer {
-  margin: auto;
-  position: relative;
-  height: 15vh;
-  transition: all .5s ease;
+#videoContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 31;
+  transition: all 0.5s;
 }
 
-.videoContainerSize {
-  box-sizing: border-box;
-  width: var(--videoWidth);
-  height: 0;
-  padding-bottom: calc(var(--videoAspectRatio) * var(--videoWidth));
-  transition: all .5s ease;
-}
-
-.videoButton {
-  position: absolute;
+#video {
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  width: var(--videoWidth);
+  height: var(--videoHeight);
   border-radius: var(--borderRadiusDefault);
-  transition: all 1s ease;
-}
-
-.videoContainer iframe {
-  position: absolute;
-  border-radius: var(--borderRadiusDefault);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: all 1s ease;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  z-index: 32;
 }

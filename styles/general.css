@@ -1,8 +1,9 @@
 /* GENERAL RULES */
 :root {
     --navbarHeight: 64px;
-    --videoWidth: calc(80vh * 16/9);
+    --videoWidth: calc(70vh * 16/9);
     --videoAspectRatio: calc(9/16);
+    --videoHeight: calc(var(--videoWidth) * var(--videoAspectRatio));
     --borderRadiusDefault: 1.5vmin;
 }
 
