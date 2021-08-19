@@ -1,14 +1,12 @@
 #eventData {
   display: grid;
-  grid-template-areas: "date location remaining length";
   grid-template-columns: repeat(4, 1fr);
   width: 100vw;
   height: 5rem;
 }
 
 .eventDataElements {
-  border-left: solid 1px rgba(192, 192, 192, 0.4);
-  box-shadow: 2px 0 1px rgba(0, 0, 0, 0.4);
+  position: relative;
   background-color: rgba(24, 147, 208, 0.8);
   display: flex;
   align-items: center;
@@ -18,9 +16,66 @@
   font-family: 'Baloo Bhai 2', cursive;
   font-weight: bold;
   transition: all 0.5s;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.eventDataElements:hover {
+.eventDataElementShadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.4),
+              3px 0 10px -2px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.eventDataElements span {
+  position: absolute;
+  width: 15%;
+  height: 100%;
   background-color: rgb(160, 202, 57);
-  transition: all 0.5s;
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 15%);
+  transition: 1s;
+  transition-delay: calc((var(--n) - 1) * 0.05s);
+  z-index: -1;
+}
+
+.eventDataElements:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.eventDataElements span:nth-child(2) {
+  --n: 1;
+}
+
+.eventDataElements span:nth-child(3) {
+  --n: 2;
+}
+
+.eventDataElements span:nth-child(4) {
+  --n: 3;
+}
+
+.eventDataElements span:nth-child(5) {
+  --n: 4;
+}
+
+.eventDataElements span:nth-child(6) {
+  --n: 5;
+}
+
+.eventDataElements span:nth-child(7) {
+  --n: 6;
+}
+
+.eventDataElements span:nth-child(8) {
+  --n: 7;
+}
+
+.eventDataElements span:nth-child(9) {
+  --n: 8;
 }

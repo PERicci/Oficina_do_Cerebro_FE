@@ -92,6 +92,11 @@
     font-size: 1.5rem;
   }
 
+  #eventData {
+    grid-template-columns: repeat(2, 1fr);
+    height: 8rem;
+  }
+
   .card:not(:last-child) {
     margin-bottom: 5%;
   }

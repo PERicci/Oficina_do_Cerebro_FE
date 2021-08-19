@@ -64,7 +64,7 @@
   height: 100%;
   transform: translate(-120%, 0);
   opacity: 0;
-  background-color: rgb(33, 205, 152);
+  background-color: #21cd98;
   z-index: -1;
   transition: all 0.5s linear;
 }
@@ -99,4 +99,3 @@
   grid-area: video;
   background-color: rgb(255, 220, 125);
 }
-
