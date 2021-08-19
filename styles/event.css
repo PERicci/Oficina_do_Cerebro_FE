@@ -3,6 +3,7 @@
   grid-template-columns: repeat(4, 1fr);
   width: 100vw;
   height: 5rem;
+  padding-bottom: 0.2rem;
 }
 
 .eventDataElements {
@@ -11,7 +12,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 0.2rem;
   font-size: 1.5rem;
   font-family: 'Baloo Bhai 2', cursive;
   font-weight: bold;
@@ -33,9 +33,9 @@
 
 .eventDataElements span {
   position: absolute;
-  width: 15%;
+  width: 50%;
   height: 100%;
-  background-color: rgb(160, 202, 57);
+  background-color: #21cd98;
   transform: translateY(150%);
   border-radius: 50%;
   left: calc((var(--n) - 1) * 15%);
@@ -45,37 +45,5 @@
 }
 
 .eventDataElements:hover span {
-  transform: translateY(0) scale(2);
-}
-
-.eventDataElements span:nth-child(2) {
-  --n: 1;
-}
-
-.eventDataElements span:nth-child(3) {
-  --n: 2;
-}
-
-.eventDataElements span:nth-child(4) {
-  --n: 3;
-}
-
-.eventDataElements span:nth-child(5) {
-  --n: 4;
-}
-
-.eventDataElements span:nth-child(6) {
-  --n: 5;
-}
-
-.eventDataElements span:nth-child(7) {
-  --n: 6;
-}
-
-.eventDataElements span:nth-child(8) {
-  --n: 7;
-}
-
-.eventDataElements span:nth-child(9) {
-  --n: 8;
+  transform: translateY(0) scale(4);
 }

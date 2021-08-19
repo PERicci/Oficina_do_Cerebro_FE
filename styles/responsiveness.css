@@ -95,6 +95,7 @@
   #eventData {
     grid-template-columns: repeat(2, 1fr);
     height: 8rem;
+    padding-bottom: 0.4rem;
   }
 
   .card:not(:last-child) {
